@@ -6,7 +6,7 @@ body {
 
 .header {
     position: relative;
-    height: 710px;
+    height: 722px;
     margin: 0;
     padding: 0;
 }
@@ -18,15 +18,25 @@ body {
     padding-top: 10%;
 }
 
-.headerTitle button {
+.headerButtons button {
     border: 0;
-    border-radius: 15px;
-    width: 100px;
-    height: 40px;
-    margin: 10px;
+    width: 111px;
+    height: 50px;
+    margin: 10px 1px 1px 1px;
     font-family: 'Verdana';
     background-color: #648be8;
     color: white;
+    font-size: 17px;
+    border-radius: 5px ;
+}
+
+
+.headerButtons1 button {
+    border-radius: 20px 5px 5px 20px ;
+}
+
+.headerButtons3 button {
+    border-radius: 5px 20px 20px 5px ;
 }
 
 .bgphoto {
@@ -44,5 +54,7 @@ body {
 .next {
 
     height: 500px;
-    background-color: #141414;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
 }
