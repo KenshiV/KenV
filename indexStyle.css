@@ -1,12 +1,14 @@
-body {
-    background-color: #141414;
+body{
+    background-color: #101010;
     color: white;
     font-family: 'Verdana';
+    margin: 0;
 }
 
 .header {
+    background-color: #141414;
     position: relative;
-    height: 722px;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -15,21 +17,45 @@ body {
     min-width: 100%;
     position: relative;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 30vh;
 }
 
+.kenv {
+    transition: 1s;
+}
+
+.kenv:hover {
+    transform: rotate(540deg) scale(1.5) translateY(50px);
+    transition-duration: 2s;
+}
+
+
+.headerButtons {
+    margin-top: 10px;
+}
 .headerButtons button {
     border: 0;
     width: 111px;
     height: 50px;
-    margin: 10px 1px 1px 1px;
+    margin: 1px 1px 1px 1px;
     font-family: 'Verdana';
-    background-color: #648be8;
+    background-color: #e8b864;
     color: white;
     font-size: 17px;
+    font-weight: bold;
     border-radius: 5px ;
+    transition: .5s;
 }
 
+.headerButtons button:hover {
+    background-color: #f6d498;
+    transition-duration: .5s;
+}
+
+.headerButtons button:active {
+    background-color: #563f18;
+    transition-duration: 1ms;
+}
 
 .headerButtons1 button {
     border-radius: 20px 5px 5px 20px ;
@@ -41,8 +67,6 @@ body {
 
 .bgphoto {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
     top: 0;
@@ -51,10 +75,45 @@ body {
     opacity: 1%;
 }
 
-.next {
-
-    height: 500px;
-    margin: 0px;
-    padding: 0px;
+.bar {
     background-color: #000000;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 10px #000000;
+    height: 70px;
+    text-align: center;
+}
+
+.barIcon {
+    margin: 10px;
+
+}
+
+.next {
+    text-align: center;
+    height: 700px;
+}
+
+.friends {
+    display: inline-block;
+    width: 55%;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #2a2a2972;
+    margin: 100px 0 100px;
+}
+.box {
+    background-color: #1a1a1a39;
+    border-radius: 50px;
+    display: inline-block;
+    width: 45%;
+    height: 50%;
+    margin: 10px;
+}
+
+.pfp {
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    object-fit: cover;
 }
